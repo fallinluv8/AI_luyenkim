@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelling Salesman Problem</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+      select {
+        margin: 10px;
+      }
+
+      .body {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Travelling Salesman Problem</h1>
+    <label for="start">Start:</label>
+    <select id="start">
+      <option value="0">A</option>
+      <option value="1">B</option>
+      <option value="2">C</option>
+      <option value="3">D</option>
+      <option value="4">E</option>
+    </select>
+    <button onclick="solveTSP()">Solve</button>
+    <canvas id="tspCanvas" width="600" height="600"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
